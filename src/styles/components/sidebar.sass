@@ -1,5 +1,5 @@
 @use '../variables'
-
+@use '../mixins'
 #sidebar
     background-color: variables.$bg-color
     flex: 1 1 0
@@ -23,3 +23,6 @@
         border-radius: variables.$carder-border-radius
         margin-top: 15rem
         padding: .8rem 1.2rem
+
+    .btn
+        @include mixins.btn
